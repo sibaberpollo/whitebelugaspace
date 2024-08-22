@@ -25,18 +25,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `José Pino`,
-        short_name: `JP`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // Actualiza esta ruta a tu favicon
-      },
-    },
     `gatsby-plugin-react-helmet`,
   ],
 }
