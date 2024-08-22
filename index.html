@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+        }
+
+        .name {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .location img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .available {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .about {
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .project-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .project-tags {
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .contact-button {
+            background-color: #ffd700;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #333;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .contact-button:hover {
+            background-color: #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .content {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-pic">
+                <img src="https://via.placeholder.com/150" alt="Scott Johnson">
+            </div>
+            <div class="name">Scott Johnson</div>
+            <div class="location">
+                <img src="https://img.icons8.com/material-outlined/24/000000/marker.png"/>
+                <span>New York, USA</span>
+            </div>
+            <div class="available">Available for relocation</div>
+            <button class="contact-button">Contact me</button>
+        </div>
+        <div class="content">
+            <div class="about">
+                <h2>About</h2>
+                <p>
+                    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X on the runway heading towards a streamlined cloud solution.
+                </p>
+                <p>
+                    User generated content in real-time will have multiple touchpoints for offshoring. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+                </p>
+            </div>
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <div class="project-title">JS GraphQL library</div>
+                    <a class="project-link" href="https://github.com">https://github.com</a>
+                    <p>Override the digital divide with additional clickthroughs from DevOps. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                    <div class="project-tags">
+                        <span class="tag">Status: in progress</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-title">Running Lists</div>
+                    <a class="project-link" href="https://running-lists.com">https://running-lists.com</a>
+                    <p>Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                    <div class="project-tags">
+                        <span class="tag">Status: live</span>
+                        <span class="tag">RoR</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
