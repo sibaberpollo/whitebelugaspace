@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import profilePic from "../images/profile.jpg";
-import { FaMapMarkerAlt } from 'react-icons/fa'; 
+import { FaMapMarkerAlt, FaInstagram, FaGithub } from 'react-icons/fa'; 
 
 const IndexPage = ({ data }) => {
   const [activeTab, setActiveTab] = useState("opinion");
@@ -30,7 +30,15 @@ const IndexPage = ({ data }) => {
           <div className="name">José Pino</div>
           <div className="location">
             <FaMapMarkerAlt size={20} color="#333" />
-            <span>33° S, Trópico de Capricornio</span>
+            <span>&nbsp;33° S, Trópico de Capricornio</span>
+          </div>
+          <div className="social-media">
+            <a href="https://www.instagram.com/sibaberpollo" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={20} color="#333" />
+            </a>
+            <a href="https://github.com/sibaberpollo" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={20} color="#333" />
+            </a>
           </div>
         </div>
       </div>

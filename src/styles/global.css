@@ -250,7 +250,20 @@ h6 {
   .contentDesc a:hover::after {
     color: #fff; /* Cambia el color del ícono de enlace a blanco en el hover */
   }
+  .social-media {
+    margin-top: 10px;
+  }
   
+  .social-media a {
+    margin-right: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #007bff;
+  }
+    
 
 @media (max-width: 768px) {
     .container {
